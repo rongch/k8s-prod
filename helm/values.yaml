@@ -27,7 +27,7 @@ chartmuseum:
 
 jenkins:
   Master:
-    ImageTag: "2.129-alpine"
+    ImageTag: "2.151-alpine"
     Cpu: "500m"
     Memory: "500Mi"
     ServiceType: ClusterIP
