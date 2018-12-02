@@ -22,12 +22,12 @@ chartmuseum:
       ingress.kubernetes.io/ssl-redirect: "false"
       nginx.ingress.kubernetes.io/ssl-redirect: "false"
     hosts:
-      cm.192.168.99.122.nip.io: # Change me!
+      cm.192.168.99.123.nip.io: # Change me!
       - /
 
 jenkins:
   Master:
-    ImageTag: "2.151-alpine"
+    ImageTag: "2.129-alpine"
     Cpu: "500m"
     Memory: "500Mi"
     ServiceType: ClusterIP
@@ -66,7 +66,7 @@ jenkins:
         ingress.kubernetes.io/ssl-redirect: "false"
         ingress.kubernetes.io/proxy-body-size: 50m
         ingress.kubernetes.io/proxy-request-buffering: "off"
-    HostName: jenkins.192.168.99.122.nip.io # Change me!
+    HostName: jenkins.192.168.99.123.nip.io # Change me!
     CustomConfigMap: true
     CredentialsXmlSecret: jenkins-credentials
     SecretsFilesSecret: jenkins-secrets
